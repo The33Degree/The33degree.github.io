@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <title>The Arena</title>
+	<link rel="icon" href="images/ace.png">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload=display_ct();>
+	<script src="script.js">
+	</script>
+
+	<div class="main">
+		<div class="topbar">
+			<div class="button11">
+				How To<br>Play
+				<a href="">
+					<span class="divbutton"></span>
+				</a>
+			</div>
+			<div class="button12">
+				<img src="images/notification_icon.png" style="width: 3vw">
+				Notifications
+				<a href="">
+					<span class="divbutton"></span>
+				</a>
+			</div>
+			<button onclick="dropdown1()" class="button13">Professional</button>
+			<div id="dropdowncontent1" class="dropdown-content1" style="margin-left: 17.3vw; min-width: 25.3vw;">
+				<a href="live_events_pro.html">Live Events</a>
+				<a href="">Upcoming Events</a>
+				<a href="">Event Archive</a>
+			</div>
+			<div class="titlelogo">
+				<div style="margin: auto; width: 82.5%;">
+				<img src="images/ace.png" style="width: 2vw; float: left;">
+				<div style="margin-left: 1vw; float: left;">THE<br>ARENA<p style="font-size: 1vw; margin-top: 0vw; letter-spacing: normal; font-family: 'Proxima Nova';"><span id="datetime1"></span></p></div>
+				<img src="images/ace.png" style="width: 2vw; margin-left: 1vw; float: left;">
+				</div>
+				<a href="index.html">
+					<span class="divbutton"></span>
+				</a>
+			</div>
+			<button onclick="dropdown2()" class="button14">Community</button>
+			<div id="dropdowncontent2" class="dropdown-content2" style="margin-left: 57.8vw; min-width: 30.3vw;">
+				<a href="live_events_comm.html">Live Events</a>
+				<a href="">Upcoming Events</a>
+				<a href="">Event Archive</a>
+			</div>
+			<div class="button15">
+				Log In/Sign Up
+				<a href="login.html">
+					<span class="divbutton"></span>
+				</a>
+			</div>
+		</div>
+
+		<div class="menupage1">
+			<div style="height: 22vw; display: flex; justify-content: center; align-items: center;">
+				<img src="images/play_button.png" style="width: 8vw;">
+			</div>
+			<div style="height: calc(100vh - 27.75vw); background:white; border-top: 0.25vw solid black; display: flex;">
+				<table style="width: 250px; height: 100%; margin-top: -2px; font-size: 3vh; border: 1px solid black;">
+					<tr style="height: calc((100/7)%); border: 1px solid black;">
+						<td>Event Odds</td>
+					</tr>
+					<tr style="height: calc((100/7)%); border: 1px solid black;">
+						<td>Event Descriptions</td>
+					</tr>
+					<tr style="height: calc((100/7)%); border: 1px solid black;">
+						<td>Side Details</td>
+					</tr>
+					<tr style="height: calc((100/7)%); border: 1px solid black;">
+						<td onclick="livestream1()">Place Bets</td>
+					</tr>
+					<tr style="height: calc((100/7)%); border: 1px solid black;">
+						<td>Set Side Bets</td>
+					</tr>
+					<tr style="height: calc((100/7)%); border: 1px solid black;">
+						<td>DEN Details</td>
+					</tr>
+					<tr style="height: calc((100/7)%); border: 1px solid black;">
+						<td>Live Chat</td>
+					</tr>
+				</table>
+				<!-- <div id="livestream1" style="width: calc(100vw - 250px); height: calc(98vh - 27.75vw); margin-top: 2vh; display: none;">
+					<table style="margin:auto">
+						<colgroup>
+							<col style="width: 20vw;">
+							<col style="width: 20vw;">
+						</colgroup>
+						<tr style="height: 4vh;">
+							<th colspan="2" style="border: 1px solid black">MAIN LINE BETS</th>
+						</tr>
+						<tr style="height: 2vh;">
+							<th style="border: 1px solid black">Side 1</th>
+							<th style="border: 1px solid black">Side 2</th>
+						</tr>
+						<tr style="height: 8vh;">
+							<td style="border: 1px solid black">Username: <input style="width: 10vw;" type="text"><br>
+							Bet Amount: <input style="width: 10vw;" type="text" value="$"></td>
+							<td style="border: 1px solid black">Username: <input style="width: 10vw;" type="text"><br>
+							Bet Amount: <input style="width: 10vw;" type="text" value="$"></td>
+						</tr>
+						<tr style="height: 2vh;">
+							<td style="border: 1px solid black"></td>
+							<td style="border: 1px solid black"></td>
+						</tr>
+						<tr style="height: 2vh;">
+							<td style="border: 1px solid black"></td>
+							<td style="border: 1px solid black"></td>
+						</tr>
+						<tr style="height: 2vh;">
+							<td style="border: 1px solid black"></td>
+							<td style="border: 1px solid black"></td>
+						</tr>
+						<tr style="height: 2vh;">
+							<td style="border: 1px solid black"></td>
+							<td style="border: 1px solid black"></td>
+						</tr>
+						<tr style="height: 2vh;">
+							<td style="border: 1px solid black"></td>
+							<td style="border: 1px solid black"></td>
+						</tr>
+						<tr style="height: 2vh;">
+							<td style="border: 1px solid black"></td>
+							<td style="border: 1px solid black"></td>
+						</tr>
+						<tr style="height: 2vh;">
+							<td style="border: 1px solid black"></td>
+							<td style="border: 1px solid black"></td>
+						</tr>
+						<tr style="height: 2vh;">
+							<td style="border: 1px solid black"></td>
+							<td style="border: 1px solid black"></td>
+						</tr>
+						<tr style="height: 2vh;">
+							<td style="border: 1px solid black"></td>
+							<td style="border: 1px solid black"></td>
+						</tr>
+					</table>
+				</div> --> 
+			</div>
+		</div>
+
+    </div>
+    
+
+  </body>
+</html>

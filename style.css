@@ -1,0 +1,530 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Proxima Nova";
+  -webkit-user-select: none;
+}
+
+@font-face {
+  font-family: "Denmark";
+  src: url("denmark.woff");
+}
+
+@font-face {
+  font-family: "Cloister Black";
+  src: url("cloisterblack.woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("proximanova.ttf");
+}
+
+.main {
+  width: 100vw;
+  height:100vh;
+  position: fixed;
+  background-color: #181818;
+  /* #1b0047 */
+}
+
+.topbar {
+  width: 100vw;
+  height: 5.5vw;
+  margin-top: 0vh;
+  margin-left: 0vw;
+  position: fixed;
+  background-color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.button11 {
+  width: 10.75vw;
+  height: 4.35vw;
+  margin-top: 0vh;
+  margin-left: 0vw;
+  padding-top: 0.65vw;
+  position: absolute;
+  font-family: "Denmark";
+  font-size: 1.5vw;
+  text-align: center;
+  line-height: 2vw;
+  background-color: #ffd700;
+  border-style: solid;
+  border-width: 0.25vw;
+}
+
+.button12 {
+  width: 6vw;
+  height: 4.5vw;
+  margin-top: 0vh;
+  margin-left: 11vw;
+  padding-top: 0.5vw;
+  position: absolute;
+  font-family: "Denmark";
+  font-size: 0.75vw;
+  text-align: center;
+  line-height: 1vw;
+  background-color: #ffd700;
+  border-style: solid;
+  border-width: 0.25vw;
+}
+
+.button13 {
+  width: 25.4vw;
+  height: 5.5vw;
+  margin-top: 0vh;
+  margin-left: 17.3vw;
+  padding-top: 0.5vw;
+  position: absolute;
+  font-family: "Denmark";
+  font-size: 2vw;
+  text-align: center;
+  line-height: 2vw;
+  background-color: #ffd700;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.25vw;
+  cursor: pointer;
+}
+
+.titlelogo {
+  width: 15vw;
+  height: 4.5vw;
+  margin-top: 0vh;
+  margin-left: 42.5vw;
+  padding-top: 0.5vw;
+  position: absolute;
+  font-family: "Denmark";
+  font-size: 1.5vw;
+  letter-spacing: 0.15vw;
+  text-align: center;
+  line-height: 1.5vw;
+  background-color: #ffd700;
+  border-style: solid;
+  border-width: 0.25vw;
+}
+
+.button14 {
+  width: 30.4vw;
+  height: 5.5vw;
+  margin-top: 0vh;
+  margin-left: 57.8vw;
+  padding-top: 0.5vw;
+  position: absolute;
+  font-family: "Denmark";
+  font-size: 2vw;
+  text-align: center;
+  line-height: 2vw;
+  background-color: #ffd700;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.25vw;
+}
+
+.button15 {
+  width: 11.5vw;
+  height: 3.5vw;
+  margin-top: 0vh;
+  margin-left: 88vw;
+  padding-top: 1.5vw;
+  position: absolute;
+  font-family: "Denmark";
+  font-size: 1vw;
+  text-align: center;
+  line-height: 2vw;
+  background-color: #ffd700;
+  border-style: solid;
+  border-width: 0.25vw;
+}
+
+.divbutton {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+a { 
+    color: inherit;
+	text-decoration: none;
+}
+
+.button11:hover, .button11:focus, .button12:hover, .button12:focus, .button13:hover, .button13:focus, .button14:hover, .button14:focus, .button15:hover, .button15:focus, .titlelogo:hover, .titlelogo:focus {
+  	background-color: #9c891d;
+	cursor: pointer;
+	user-select: none;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  margin-top: 5.5vw;
+  z-index: 100;
+}
+
+.dropdown-content1 a {
+  color: black;
+  font-family: "Denmark";
+  text-align: left;
+  padding: 0.75vw 1vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content1 a:hover {background-color: #cccccc;}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  margin-top: 5.5vw;
+  z-index: 100;
+}
+
+.dropdown-content2 a {
+  color: black;
+  font-family: "Denmark";
+  text-align: left;
+  padding: 0.75vw 1vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a:hover {background-color: #cccccc;}
+
+
+.searchbarmain {
+  width: 100vw;
+  height: 3vw;
+  margin-top: 5.5vw;
+  position: absolute;
+  background-color: #181818;
+  /* 888888 */
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+.searchmain{
+  width: auto;
+  height: 2.5vw;
+  margin-left: 5vw;
+  padding-top: 0.5vw;
+  position: absolute;
+  font-size: 1.8vw;
+  color: #FFFFFF;
+}
+
+.searchfieldmain{
+  height: auto;
+  width: 15vw;
+  margin-left: 42vw;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  overflow: hidden;
+}
+
+.premierEventsLive, .premierEventsUpcoming, .sportsLive, .sportsUpcoming, .eventsLive, .eventsUpcoming {
+  width: 97.25vw;
+  height: 2.7vw;
+  padding-top: 0.8vw;
+  padding-left: 2vw;
+  font-size: 1.5vw;
+  color: white;
+  position: absolute;
+  background-color: #d60006;
+  /* f5393f */
+  border-color: black;
+  border-style: solid;
+  border-width: 0.25vw;
+  border-left-width: 0vw;
+  border-right-width: 0vw;
+}
+
+.premierEventsLiveView, .premierEventsUpcomingView, .sportsLiveView, .sportsUpcomingView, .eventsLiveView, .eventsUpcomingView {
+  width: 97.25vw;
+  height: 16vw;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  font-size: 1.5vw;
+  position: absolute;
+}
+
+.livestreamPanel {
+	height: calc(9vw * 14 / 9);
+	width: calc(14vw * 14 / 9);
+	background: white;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.livestreamPanelImage {
+	margin-top: 0vw;
+	margin-left: 0vw;
+	width: auto;
+	height: calc(7vw * 14 / 9);
+	display: block;
+	overflow: hidden;
+}
+
+.livestreamPanelDetailBar {
+	height: calc(2vw * 14 / 9);
+	width: calc(14vw * 14 / 9);
+	margin-top: -0.1vw;
+	display: block;
+}
+
+.livestreamPanelDetailBarTitle {
+	height: calc(2vw * 7 / 9 - 0.1vw);
+	width: calc(14vw * 14 / 9 - 0.2vw);
+	margin-top: 0.3vw;
+	margin-left: 0.1vw;
+	font-size: 0.9vw;
+	text-align: center;
+}
+
+.livestreamPanelDetailBarSave {
+	height: 0.8vw;
+	width: 0.8vw;
+	margin-top: 0.1vw;
+	margin-left: 0.6vw;
+	float: left;
+}
+
+.livestreamPanelDetailBarWatchlist {
+	margin-top: 0.1vw;
+	font-size: 0.9vw;
+	float: left;
+}
+
+.livestreamPanelDetailBarDetail {
+	margin-top: 0.1vw;
+	margin-left: 1vw;
+	font-size: 0.9vw;
+	float: right;
+}
+
+.livestreamPanelDetailBarEye {
+	height: 1.2vw;
+	width: 1.2vw;
+	margin-right: 0.6vw;
+	float: right;
+}
+
+
+/* ----------------------------------------------------------- */
+
+.searchbartitle {
+  width: 100vw;
+  height: 3vw;
+  margin-top: 7.5vw;
+  margin-left: 0vw;
+  position: absolute;
+  background-color: #aaaaaa;
+}
+
+.mainmenu {
+  width: 100vw;
+  height: 2vw;
+  margin-top: 0vh;
+  margin-left: 0vw;
+  position: fixed;
+  font-size: 1.7vw;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.title {
+  width: 100vw;
+  height: 5vw;
+  margin-top: 2vw;
+  margin-left: 0vw;
+  position: fixed;
+  text-align: center;
+  background-color: #aaaaaa;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 0.25vw;
+}
+
+.menupage {
+  width: 100vw;
+  height: calc(100vh - 8.5vw);
+  margin-top: 8.5vw;
+  min-height: calc(100vh - 8.5vw);
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  z-index: -1;
+}
+
+.menupage1 {
+  width: 100vw;
+  height: calc(100vh - 5.5vw);
+  margin-top: 5.5vw;
+  min-height: calc(100vh - 6.5vw);
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  z-index: -1;
+}
+
+.menupage2 {
+  width: 100%;
+  min-height: calc(100vh - 25.2vw + 2px);
+  height: auto;
+  position: absolute;
+  display: none;
+  overflow: auto;
+}
+
+.menupage2a {
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.denBetButtons {
+	width: 7vw;
+	height: 3vw;
+	margin-left: 2vw;
+	background: #4ab550;
+	border-style: solid;
+	position: absolute;
+}
+
+.denBetButtons:hover {
+	background: #5cec63;
+	cursor: pointer;
+	user-select: none;
+}
+
+.denBetButtons p {
+	font-size: 2vw;
+	margin-top: 0.4vw;
+	text-align: center;
+}
+
+#linkSocialMedia {
+	text-decoration: underline;
+}
+
+#linkSocialMedia:hover {
+	color: blue;
+}
+
+table, th, td {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+.tableLeft {
+	text-align: left;
+	vertical-align: top;
+}
+
+.text{
+  width: calc(96vw - 12px);
+  margin-left: 2vw;
+  margin-right: calc(2vw + 12px);
+  position: absolute;
+  font-size: 1.5vw;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.loginSignUp {
+	background: #2c9c2c;
+	width: 49.5%;
+	height: 10%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loginSignUp:hover {
+	background-color: #1b6b1b;
+	cursor: pointer;
+	user-select: none;
+}
+
+.loginSignUpPage {
+	width: 60vmin;
+	height: 63vmin;
+	margin-top: 7vmin;
+	position: absolute;
+	display: none;
+	overflow: auto;
+}
+
+.profilebutton:hover, .profilebutton:focus {
+	background-color: #68518d;
+	cursor: pointer;
+	user-select: none;
+}
+
+.arrow_line {
+	border-radius: 0.3vw;
+}
+
+.arrow_line::after {
+	content: '';
+	display: block;
+    position: relative;
+    margin-top: 0%;
+    height: 20%;
+    background-color: #000;
+    -webkit-clip-path: polygon(0 0, 45% 0, 50% 50%, 55% 0, 100% 0, 100% 30%, 55% 30%, 50% 80%, 45% 30%, 0% 30%);
+}
+
+.arrow_line:hover {
+	background-color: #b9b9b9;
+	cursor: pointer;
+	user-select: none;
+}
+
+/* ----------------------------------------------------------- */
+
+div::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+div::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #1b0047;
+}
+
+div::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+.show {display: block;}

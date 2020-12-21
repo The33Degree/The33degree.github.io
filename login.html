@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <title>The Arena</title>
+	<link rel="icon" href="images/ace.png">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload=display_ct();>
+	<script src="script.js"></script>
+
+	<div class="main">
+		<div class="topbar">
+			<div class="button11">
+				How To<br>Play
+				<a href="">
+					<span class="divbutton"></span>
+				</a>
+			</div>
+			<div class="button12">
+				<img src="images/notification_icon.png" style="width: 3vw">
+				Notifications
+				<a href="">
+					<span class="divbutton"></span>
+				</a>
+			</div>
+			<button onclick="dropdown1()" class="button13">Professional</button>
+			<div id="dropdowncontent1" class="dropdown-content1" style="margin-left: 17.3vw; min-width: 25.3vw;">
+				<a href="live_events_pro.html">Live Events</a>
+				<a href="">Upcoming Events</a>
+				<a href="">Event Archive</a>
+			</div>
+			<div class="titlelogo">
+				<div style="margin: auto; width: 82.5%;">
+				<img src="images/ace.png" style="width: 2vw; float: left;">
+				<div style="margin-left: 1vw; float: left;">THE<br>ARENA<p style="font-size: 1vw; margin-top: 0vw; letter-spacing: normal; font-family: 'Proxima Nova';"><span id="datetime1"></span></p></div>
+				<img src="images/ace.png" style="width: 2vw; margin-left: 1vw; float: left;">
+				</div>
+				<a href="index.html">
+					<span class="divbutton"></span>
+				</a>
+			</div>
+			<button onclick="dropdown2()" class="button14">Community</button>
+			<div id="dropdowncontent2" class="dropdown-content2" style="margin-left: 57.8vw; min-width: 30.3vw;">
+				<a href="live_events_comm.html">Live Events</a>
+				<a href="">Upcoming Events</a>
+				<a href="">Event Archive</a>
+			</div>
+			<div class="button15">
+				Log In/Sign Up
+				<a href="login.html">
+					<span class="divbutton"></span>
+				</a>
+			</div>
+		</div>
+
+		<div class="menupage1">
+			<div style="background: white; height: 70vmin; width: 60vmin; margin-top: calc((100vh - 5.5vw - 70vmin) / 2); margin-left: calc((100vw - 60vmin) / 2);">
+				<div class="loginSignUp" onclick="showLogin()">
+					<p style="font-size: 2vw">LOGIN</p>
+				</div>
+				<div class="loginSignUp" style="margin-left: 1%;" onclick="showSignUp()">
+					<p style="font-size: 2vw">SIGN UP</p>
+				</div>
+				<div id="signUp" class="loginSignUpPage" style="display: block;">
+					<img src="images/ace.png" style="width: 15%; margin-top: 5%; margin-left: 42.5%;">
+					<input type="text" id="signUp_username" name="signUp_username" style="height: 5%; width: 60%; margin-top: 8%; margin-left: 20%; font-size: 2vmin; outline: none;" placeholder="Username">
+					<input type="text" id="signUp_pass" name="signUp_pass" style="height: 5%; width: 60%; margin-top: 3%; margin-left: 20%; font-size: 2vmin; outline: none;" placeholder="Password">
+					<input type="text" id="signUp_passConfirm" name="signUp_passConfirm" style="height: 5%; width: 60%; margin-top: 3%; margin-left: 20%; font-size: 2vmin; outline: none;" placeholder="Confirm Password">
+					<input type="text" id="signUp_email" name="signUp_email" style="height: 5%; width: 60%; margin-top: 3%; margin-left: 20%; font-size: 2vmin; outline: none;" placeholder="Email">
+					<a href="profile.html">
+						<div class="arrow_line" style="width: 20%; height: 7%; margin-top: 7%; margin-left: 40%; text-align: center; font-size: 2vmin; line-height: 4.41vmin;">Sign Up</div>
+					</a>
+					<a href="profile.html">
+						<div class="arrow_line" style="width: 40%; height: 7%; margin-top: 7%; margin-left: 30%; text-align: center; font-size: 2vmin; line-height: 4.41vmin;">Sign Up As Advertisor</div>
+					</a>
+				</div>
+				<div id="login" class="loginSignUpPage">
+					<img src="images/ace.png" style="width: 15%; margin-top: 5%; margin-left: 42.5%;">
+					<input type="text" id="login_username" name="login_username" style="height: 5%; width: 60%; margin-top: 15%; margin-left: 20%; font-size: 2vmin; outline: none;" placeholder="Username">
+					<input type="text" id="login_pass" name="login_pass" style="height: 5%; width: 60%; margin-top: 3%; margin-left: 20%; font-size: 2vmin; outline: none;" placeholder="Password">
+					<a href="profile.html">
+						<div class="arrow_line" style="width: 20%; height: 7%; margin-top: 12%; margin-left: 40%; text-align: center; font-size: 2vmin; line-height: 4.41vmin;">Log In</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+    </div>
+    
+
+  </body>
+</html>
