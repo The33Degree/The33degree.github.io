@@ -74,6 +74,10 @@
 				<td>Confirm Password</td>
 				<td><input type="text" class="textField"/></td>
 			</tr>
+			<tr>
+				<td></td>
+				<td><div style="width: 10vw; height: 1.5vw; padding: 0.5vw; margin: 0 auto; border-radius: 0.5vw; background: var(--colorMaroon); font-size: 1.2vw; text-align: center;">Sign Up</div></td>
+			</tr>
 		</table>
 	</div>
   </body>
