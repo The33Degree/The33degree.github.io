@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-    <title>The Arena</title>
+    <title>The District</title>
 	<link rel="icon" href="./images/ace.png">
 	<link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
@@ -14,7 +14,7 @@
 		<div class="logo" onclick="window.location.replace('./index.php');">
 			<div style="margin: auto; width: 82.5%;">
 				<img src="images/ace.png" style="width: 2vw; margin-top: 1vw; float: left;">
-				<div style="margin-left: 1vw; margin-top: 0.7vw; float: left;">THE<br>ARENA<p style="font-size: 1vw; margin-top: 0vw; letter-spacing: normal; font-family: 'Proxima Nova';"><span id="datetime1"></span></p></div>
+				<div style="margin-left: 1vw; margin-top: 0.7vw; float: left;">THE<br>DISTRICT<p style="font-size: 1vw; margin-top: 0vw; letter-spacing: normal; font-family: 'Proxima Nova';"><span id="datetime1"></span></p></div>
 				<img src="images/ace.png" style="width: 2vw; margin-left: 1vw; margin-top: 1vw; float: left;">
 			</div>
 		</div>
@@ -76,7 +76,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><div style="width: 10vw; height: 1.5vw; padding: 0.5vw; margin: 0 auto; border-radius: 0.5vw; background: var(--colorMaroon); font-size: 1.2vw; text-align: center;">Sign Up</div></td>
+				<td><div class="signupSelectButton" style="display: block; width: 10vw; height: 1.5vw; padding: 0.5vw; margin: 0; border-radius: 0.5vw; background: var(--colorMaroon); font-size: 1.2vw; text-align: center; opacity: 100%">Sign Up</div></td>
 			</tr>
 		</table>
 	</div>

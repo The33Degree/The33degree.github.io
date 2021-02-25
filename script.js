@@ -129,6 +129,11 @@ function expandLogin() {
 	div.loginButton.onclick = null;
 	div.signupButton.onclick = null;
 
+	setTimeout(function() {
+		div.loginButton.setAttribute('form', 'loginForm');
+		div.loginButton.setAttribute('type', 'submit');
+	}, 2000);
+
 	Object.assign(div.loginTable.style, {
 		display: "block",
 		opacity: "100%"
@@ -203,6 +208,8 @@ function expandLoginReverse() {
 	div.loginBack.onclick = null;
 	div.loginButton.onclick = function() {expandLogin();};
 	div.signupButton.onclick = function() {expandSignup();};
+	div.loginButton.removeAttribute('form');
+	div.loginButton.removeAttribute('type');
 
 	setTimeout(function() {
 		Object.assign(div.loginBack.style, {
@@ -440,16 +447,18 @@ function expandSignupCom() {
 
 	div.signupComSelect.animate([
 		{
-			marginTop: "min(15vw, 0.45 * (100vh - 5.5vw) * 9 / 16)",
+			marginTop: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 15)",
 			marginRight: "min(20vw, 0.9 * (100vh - 5.5vw) * 3 / 8)",
-			height: "min(10vw, 0.45 * (100vh - 5.5vw) * 3 / 8)",
-			paddingTop: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)"
+			height: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 15)",
+			paddingTop: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 5)",
+			paddingBottom: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 5)"
 		},
 		{
 			marginTop: "min(40vw, 0.9 * (100vh - 5.5vw) * 3 / 4)",
 			marginRight: "0",
 			height: "min(5vw, 0.9 * (100vh - 5.5vw) * 3 / 32)",
-			paddingTop: "min(0.5vw, 0.09 * (100vh - 5.5vw) * 3 / 32)"
+			paddingTop: "0",
+			paddingBottom: "0"
 		}
 	], {
 		duration: 2000,
@@ -474,11 +483,17 @@ function expandSignupCom() {
 	div.signupProSelect.onclick = null;
 	div.signupBack.onclick = function() {expandSignupComReverse();};
 
+	setTimeout(function() {
+		div.signupComSelect.setAttribute('form', 'signupComForm');
+		div.signupComSelect.setAttribute('type', 'submit');
+	}, 2000);
+
 	Object.assign(div.signupComSelect.style, {
 		marginTop: "min(40vw, 0.9 * (100vh - 5.5vw) * 3 / 4)",
 		marginRight: "0",
 		height: "min(5vw, 0.9 * (100vh - 5.5vw) * 3 / 32)",
-		paddingTop: "min(0.5vw, 0.09 * (100vh - 5.5vw) * 3 / 32)"
+		paddingTop: "0",
+		paddingBottom: "0"
 	});
 	Object.assign(div.signupComTable.style, {
 		display: "block",
@@ -509,13 +524,15 @@ function expandSignupComReverse() {
 			marginTop: "min(40vw, 0.9 * (100vh - 5.5vw) * 3 / 4)",
 			marginRight: "0",
 			height: "min(5vw, 0.9 * (100vh - 5.5vw) * 3 / 32)",
-			paddingTop: "min(0.5vw, 0.09 * (100vh - 5.5vw) * 3 / 32)"
+			paddingTop: "0",
+			paddingBottom: "0"
 		},
 		{
 			marginTop: "min(15vw, 0.45 * (100vh - 5.5vw) * 9 / 16)",
 			marginRight: "min(20vw, 0.9 * (100vh - 5.5vw) * 3 / 8)",
-			height: "min(10vw, 0.45 * (100vh - 5.5vw) * 3 / 8)",
-			paddingTop: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)"
+			height: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 15)",
+			paddingTop: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)",
+			paddingBottom: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)"
 		}
 	], {
 		duration: 2000,
@@ -540,11 +557,15 @@ function expandSignupComReverse() {
 	div.signupProSelect.onclick = function() {expandSignupPro();};
 	div.signupBack.onclick = function() {expandSignupReverse();};
 
+	div.signupComSelect.removeAttribute('form');
+	div.signupComSelect.removeAttribute('type');
+
 	Object.assign(div.signupComSelect.style, {
 		marginTop: "min(15vw, 0.45 * (100vh - 5.5vw) * 9 / 16)",
 		marginRight: "min(20vw, 0.9 * (100vh - 5.5vw) * 3 / 8)",
-		height: "min(10vw, 0.45 * (100vh - 5.5vw) * 3 / 8)",
-		paddingTop: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)"
+		height: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 15)",
+		paddingTop: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)",
+		paddingBottom: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)"
 	});
 	Object.assign(div.signupProSelect.style, {
 		display: "block",
@@ -574,14 +595,16 @@ function expandSignupPro() {
 		{
 			marginTop: "min(15vw, 0.45 * (100vh - 5.5vw) * 9 / 16)",
 			marginLeft: "min(20vw, 0.9 * (100vh - 5.5vw) * 3 / 8)",
-			height: "min(10vw, 0.45 * (100vh - 5.5vw) * 3 / 8)",
-			paddingTop: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)"
+			height: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 15)",
+			paddingTop: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 5)",
+			paddingBottom: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 5)"
 		},
 		{
 			marginTop: "min(40vw, 0.9 * (100vh - 5.5vw) * 3 / 4)",
 			marginLeft: "0",
 			height: "min(5vw, 0.9 * (100vh - 5.5vw) * 3 / 32)",
-			paddingTop: "min(0.5vw, 0.09 * (100vh - 5.5vw) * 3 / 32)"
+			paddingTop: "0",
+			paddingBottom: "0"
 		}
 	], {
 		duration: 2000,
@@ -603,14 +626,21 @@ function expandSignupPro() {
 	});
 
 	div.signupComSelect.onclick = null;
-	div.signupProSelect.onclick = function() {window.location.href = "./signupPro.php";};
+	div.signupProSelect.onclick = null;
+	// div.signupProSelect.onclick = function() {window.location.href = "./signupPro.php";};
 	div.signupBack.onclick = function() {expandSignupProReverse();};
+
+	setTimeout(function() {
+		div.signupProSelect.setAttribute('form', 'signupProForm');
+		div.signupProSelect.setAttribute('type', 'submit');
+	}, 2000);
 
 	Object.assign(div.signupProSelect.style, {
 		marginTop: "min(40vw, 0.9 * (100vh - 5.5vw) * 3 / 4)",
 		marginLeft: "0",
 		height: "min(5vw, 0.9 * (100vh - 5.5vw) * 3 / 32)",
-		paddingTop: "min(0.5vw, 0.09 * (100vh - 5.5vw) * 3 / 32)"
+		paddingTop: "0",
+		paddingBottom: "0"
 	});
 	Object.assign(div.signupProTable.style, {
 		display: "block",
@@ -641,13 +671,15 @@ function expandSignupProReverse() {
 			marginTop: "min(40vw, 0.9 * (100vh - 5.5vw) * 3 / 4)",
 			marginLeft: "0",
 			height: "min(5vw, 0.9 * (100vh - 5.5vw) * 3 / 32)",
-			paddingTop: "min(0.5vw, 0.09 * (100vh - 5.5vw) * 3 / 32)"
+			paddingTop: "0",
+			paddingBottom: "0"
 		},
 		{
 			marginTop: "min(15vw, 0.45 * (100vh - 5.5vw) * 9 / 16)",
 			marginLeft: "min(20vw, 0.9 * (100vh - 5.5vw) * 3 / 8)",
-			height: "min(10vw, 0.45 * (100vh - 5.5vw) * 3 / 8)",
-			paddingTop: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)"
+			height: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 15)",
+			paddingTop: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 5)",
+			paddingBottom: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 5)"
 		}
 	], {
 		duration: 2000,
@@ -672,11 +704,15 @@ function expandSignupProReverse() {
 	div.signupProSelect.onclick = function() {expandSignupPro();};
 	div.signupBack.onclick = function() {expandSignupReverse();};
 
+	div.signupProSelect.removeAttribute('form');
+	div.signupProSelect.removeAttribute('type');
+
 	Object.assign(div.signupProSelect.style, {
 		marginTop: "min(15vw, 0.45 * (100vh - 5.5vw) * 9 / 16)",
 		marginLeft: "min(20vw, 0.9 * (100vh - 5.5vw) * 3 / 8)",
-		height: "min(10vw, 0.45 * (100vh - 5.5vw) * 3 / 8)",
-		paddingTop: "min(5vw, 0.45 * (100vh - 5.5vw) * 3 / 16)"
+		height: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 15)",
+		paddingTop: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 5)",
+		paddingBottom: "calc(min(1vw, 0.09 * (100vh - 5.5vw) * 3 / 16) * 5)"
 	});
 	Object.assign(div.signupComSelect.style, {
 		display: "block",
@@ -692,5 +728,11 @@ function expandSignupProReverse() {
 
 function expandExpandable(n) {
 	document.getElementById("carrot" + n).classList.toggle('expand');
-	document.getElementById("expandable" + n).classList.toggle('expand');
+	const content = document.getElementById("expandable" + n);
+    if (content.style.maxHeight) {
+    	content.style.maxHeight = null;
+    } else {
+    	content.style.maxHeight = content.scrollHeight + "px";
+    } 
+	content.classList.toggle('expand');
 }

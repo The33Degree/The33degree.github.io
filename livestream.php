@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-    <title>The Arena</title>
+    <title>The District</title>
 	<link rel="icon" href="./images/ace.png">
 	<link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
@@ -14,7 +14,7 @@
 		<div class="logo" onclick="window.location.replace('./index.php');">
 			<div style="margin: auto; width: 82.5%;">
 				<img src="images/ace.png" style="width: 2vw; margin-top: 1vw; float: left;">
-				<div style="margin-left: 1vw; margin-top: 0.7vw; float: left;">THE<br>ARENA<p style="font-size: 1vw; margin-top: 0vw; letter-spacing: normal; font-family: 'Proxima Nova';"><span id="datetime1"></span></p></div>
+				<div style="margin-left: 1vw; margin-top: 0.7vw; float: left;">THE<br>DISTRICT<p style="font-size: 1vw; margin-top: 0vw; letter-spacing: normal; font-family: 'Proxima Nova';"><span id="datetime1"></span></p></div>
 				<img src="images/ace.png" style="width: 2vw; margin-left: 1vw; margin-top: 1vw; float: left;">
 			</div>
 		</div>
@@ -52,24 +52,29 @@
 						<div id="carrot0" class="livestreamExpandableButtonCarrot"></div>
 					</div>
 					<div id="expandable0" class="livestreamDescriptionExpandableBox">
-						Tester
+						<span>Tester</span>
 					</div>
 					<div class="livestreamDescriptionExpandableButton" onclick="expandExpandable(1)">
 						Side Description
 						<div id="carrot1" class="livestreamExpandableButtonCarrot"></div>
 					</div>
 					<div id="expandable1" class="livestreamDescriptionExpandableBox">
-						Hi holden
+						<span>Hi holden</span>
 					</div>
 					<div class="livestreamDescriptionExpandableButton" onclick="expandExpandable(2)">
 						About Den
 						<div id="carrot2" class="livestreamExpandableButtonCarrot"></div>
 					</div>
 					<div id="expandable2" class="livestreamDescriptionExpandableBox">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
 					</div>
 				</div>
-				<div class="livestreamBets"></div>
+				<div class="livestreamBets">
+					<div class="livestreamBetsSideButtons">Side 1</div><!--
+					--><div class="livestreamBetsSideButtons">Side 2</div>
+					<div class="livestreamBetsBetAmounts">Side 1</div><!--
+					--><div class="livestreamBetsBetAmounts">Side 2</div>
+				</div>
 			</div>
 		</div><!--
 		--><div class="livestreamChat"></div>

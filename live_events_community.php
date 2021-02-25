@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-    <title>The Arena</title>
+    <title>The District</title>
 	<link rel="icon" href="./images/ace.png">
 	<link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
@@ -11,17 +11,18 @@
     <script src="script.js"></script>
 
 	<div class="searchBarField">
-		<div class="pageTitle">Community Live Events</div>
+		<div class="pageTitle">Home</div>
 		<div class="searchText">Search</div>
-		<input type="text" class="searchField"/>
-		<img src="./images/search_bar_icon.png" class="searchButton"/>
+		<form method="post" id="search"></form>
+		<input type="text" class="searchField" form="search"/>
+		<input type="image" src="./images/search_bar_icon.png" class="searchButton" form="search"/>
 	</div>
 
 	<div class="topbar">
 		<div class="logo" onclick="window.location.replace('./index.php');">
 			<div style="margin: auto; width: 82.5%;">
 				<img src="images/ace.png" style="width: 2vw; margin-top: 1vw; float: left;">
-				<div style="margin-left: 1vw; margin-top: 0.7vw; float: left;">THE<br>ARENA<p style="font-size: 1vw; margin-top: 0vw; letter-spacing: normal; font-family: 'Proxima Nova';"><span id="datetime1"></span></p></div>
+				<div style="margin-left: 1vw; margin-top: 0.7vw; float: left;">THE<br>DISTRICT<p style="font-size: 1vw; margin-top: 0vw; letter-spacing: normal; font-family: 'Proxima Nova';"><span id="datetime1"></span></p></div>
 				<img src="images/ace.png" style="width: 2vw; margin-left: 1vw; margin-top: 1vw; float: left;">
 			</div>
 		</div>
